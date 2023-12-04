@@ -1,3 +1,39 @@
+.intr-desc{
+  color: black;
+  text-align: left;
+  margin-left: 25vh;
+  font-size: 30px;
+}.interest-center-div{
+  width:80%;
+  height: 200%;
+  top: 100%;
+  position: relative;
+  transform: translateY(-30%);
+  /* transform: translateX(-30%); */
+
+
+}
+.intr-img{
+  height: 100%; /* Prevent images from stretching */
+  width: 100%;
+  border-width: auto; /* Maintain the aspect ratio of the images */
+  object-fit: contain;
+  z-index: 1000;
+
+}
+.small-div-i {
+  /* border:1px solid black; */
+ 
+  height: 20vh;
+  width: 25vh;
+  margin: -40px;
+  padding: 0px; /* Adjust the padding */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .index-text {
   position: absolute;
   bottom: 0;
@@ -17,7 +53,7 @@
   height: 200%;
   top: 100%;
   position: relative;
-  transform: translateY(-30%);
+  transform: translateY(-35%);
 
 
 }
@@ -134,7 +170,7 @@ body{
     margin:10px;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(45deg, #fff, #ccc, rgb(165, 142, 110), #ccc, #fff);
+    background: linear-gradient(45deg, #fff, #ccc, rgb(192, 170, 138), #ccc, #fff);
     background-size: 500% 500%;
     animation: gradientAnimation 30s infinite linear;
     

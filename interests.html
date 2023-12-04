@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Font+Name&display=swap">
+    <script src="js/action.js"></script>
+    <title>Ethan Tai</title>
+</head>
+
+<body>
+    <div class="outside">
+        <h1 id="petsTitle">Ethan Tai's Interests</h1>
+
+       
+        <nav>
+            <ul class="nav navbar-nav flex-column">
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="projects.html">Projects</a></li>
+                <li><a style="font-size: 30px;" href = "interests.html">Interests</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <div class = "interest-center-div">
+                <!-- <p class= "intr-desc">Recently, I've been cooking a lot</p>
+                <p class= "intr-desc">I love to experiment with different flavors, cultures, and spices</p>
+                <p class= "intr-desc">My top 5 dishes of this year:</p>
+                <p class= "intr-desc">Korean Pork Belly</p>
+                <p class= "intr-desc">General Tso's Chicken</p>
+                <p class= "intr-desc">Cowboy Caviar</p>
+                <p class= "intr-desc">Chicken Katsu Ramen</p>
+                <p class= "intr-desc">Salisbury Steak</p> -->
+                <!-- <p class= "intr-desc">What's fascinating about food is the nuance of it all</p>
+                <p class= "intr-desc">One quarter teaspoon can ruin or refine or do absolutely nothing</p>
+                <p class= "intr-desc">I like to build my own creations now</p>
+                <p class= "intr-desc">Carefully mixing sweet and spicy and salty and bitter and everything in between</p>
+                <p class= "intr-desc">Extracting bits of unauthentic culture from across the world to construct my own</p>
+                <p class= "intr-desc">How amazing is it that this is what a basic human desire has become</p> -->
+
+            </div>
+            <div class = "interest-center-div">
+                
+
+            </div>
+            <div class="bottom-right-text" style = "bottom:5vh;"id="proj">
+                <!-- Use data-bs-toggle and data-bs-target to associate images with modals -->
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/phil.png" >
+                </div>
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/bball.png" >
+                </div>
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/tat.png" >
+                </div>
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/read.png" >
+                </div>
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/chef.png" >
+                </div>
+                <div class="small-div-i">
+                    <img class="intr-img" src="images/clothes.png" >
+                </div>
+            </div>
+
+            
+                        
+                        
+                                  
+        
+            
+        </main>
+    </div>
+
+
+    <script>
+        // Function to update the content of interest-center-div
+        function updateInterestContent(imageSrc) {
+            var interestCenterDiv = document.querySelector('.interest-center-div');
+            console.log("dfksdfds")
+            console.log(imageSrc)
+
+            // Add logic to map image source to different poems or content
+            var content = getContentForImage(imageSrc);
+            console.log('sfjsdlfd')
+
+            // Update the content
+            interestCenterDiv.innerHTML = content;
+            console.log("updated content")
+        }
+
+        // Function to map image source to different poems or content
+        function getContentForImage(imageSrc) {
+    console.log("SDlkfjdslfs");
+    console.log('THIS IS THE IMAGE: ', imageSrc);
+
+    if (imageSrc.includes('images/phil.png')) {
+        return `
+            <p class= "intr-desc">What's the meaning of the world without philosophy and religion?</p>
+            <p class= "intr-desc">What is my purpose as a human on Earth?</p>
+            <p class= "intr-desc">What defines an action as morally good?</p>
+            <p class= "intr-desc">These are the most important questions to be asking before we begin to live</p>
+            <p class= "intr-desc">How can one live if one does not know why we live or how we can be human beings</p>
+        `;
+    } else if (imageSrc.includes('images/bball.png')) {
+        return `
+            <p class="intr-desc">I have always loved sports since I was a kid</p>
+            <p class="intr-desc">I love the competitiveness and the hype of it all</p>
+            <p class="intr-desc">Currently I've been playing a lot of basketball</p>
+            <p class="intr-desc">But for me a large part of it is nostalgia</p>
+            <p class="intr-desc">My dad always took me to baseball, basketball, and football games as a kid</p>
+            <p class="intr-desc">Watching the Atlanta Braves, Atlanta Hawks, and Georgia Tech Football </p>
+
+        `;
+    } else if (imageSrc.includes('images/chef.png')) {
+        return `<p class= "intr-desc">Recently, I've been cooking a lot</p>
+            <p class= "intr-desc">I love to experiment with different flavors, cultures, and spices</p>
+            <p class= "intr-desc">My top 5 dishes of this year:</p>
+            <p class= "intr-desc">Korean Pork Belly</p>
+            <p class= "intr-desc">General Tso's Chicken</p>
+            <p class= "intr-desc">Cowboy Caviar</p>
+            <p class= "intr-desc">Chicken Katsu Ramen</p>
+            <p class= "intr-desc">Salisbury Steak</p>`;
+    }
+ else if (imageSrc.includes('images/tat.png')) {
+        return `<p class= "intr-desc">Tattoos for me hold special meaning</p>
+            <p class= "intr-desc">Tattoos are messages for my future self to remember</p>
+            <p class= "intr-desc">Tattoos are reminders to hold true to my faith and my values </p>
+            <p class= "intr-desc">Tattoos are scars from the past that I can champion</p>
+            <p class= "intr-desc">They also feel good even though it hurts. I don't know why</p>
+     `;
+    }
+ else if (imageSrc.includes('images/clothes.png')) {
+        return `<p class= "intr-desc">Thrifting is one of my favorite things to do</p>
+            <p class= "intr-desc">There's something beautiful about buying used clothes from all around the world and creating my own unique closet and style</p>
+            <p class= "intr-desc">Some styles that I've been into recently: </p>
+            <p class= "intr-desc">Baggy corduroy</p>
+            <p class= "intr-desc">Thrifting and painting white shoes</p>
+            <p class= "intr-desc">Quarterzips</p>
+            <p class= "intr-desc">Knitwear</p>
+            <p class= "intr-desc">900 GSM hoodies</p>`;
+    }
+ else if (imageSrc.includes('images/read.png')) {
+        return `<p class= "intr-desc">My top 5 current books / series and my learnings</p>
+            <p class= "intr-desc"> <b>The Man Who Was Thursday </b>taught me about anarchism, literary satire, and the absurdity of life</p>
+            <p class= "intr-desc"> <b>Mere Christianity</b> has improved my perspective on religion and ethics</p>
+            <p class= "intr-desc"><b>The Stormlight Archive</b> immersed me in a powerful allegory for today's classism through a fantasy world</p>
+            <p class= "intr-desc"><b>Dune</b> helped me understand me the consequences of political maneuvering and the power of religion and ecological awareness</p>
+            <p class= "intr-desc"><b>Mistborn</b> taught me about the brutality societal inequality and how power corrupts</p>
+            `;
+    }
+    // Add more cases as needed
+
+    // Default case
+    return `<p class="intr-desc"></p>`;
+}
+
+
+        // Add event listeners to each intr-img
+        var intrImgs = document.querySelectorAll('.intr-img');
+        intrImgs.forEach(function (intrImg) {
+            intrImg.addEventListener('click', function () {
+                // console.log(intrImg.src)
+            
+                updateInterestContent(intrImg.src);
+            });
+        });
+    </script>
+</body>
+
+</html>
