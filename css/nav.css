@@ -1,0 +1,14 @@
+.nav{
+    margin-left: -35px;
+    font-size:20px;
+    font-family: 'San Francisco';
+
+}
+li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.nav.flex-column {
+  flex-direction: column;
+}
+

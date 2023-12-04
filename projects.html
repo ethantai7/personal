@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Font+Name&display=swap">
+    <script src="js/action.js"></script>
+    <title>Ethan Tai</title>
+</head>
+
+<body>
+    <div class="outside">
+        <h1 id="petsTitle">Ethan Tai's Projects and Experience</h1>
+
+        <a href="#main" id="skip" class="skip">Skip to Main Content</a>
+        <nav>
+            <ul class="nav navbar-nav flex-column">
+                <li><a href="index.html">Home</a></li>
+                <li><a style="font-size: 30px;" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <div class="bottom-right-text" id="proj">
+                <!-- Use data-bs-toggle and data-bs-target to associate images with modals -->
+                <div class="small-div">
+                    <img class="proj-img" src="images/cap1.png" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                </div>
+                <div class="small-div">
+                    <img class="proj-img" src="images/gpc.webp" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                </div>
+                <div class="small-div">
+                    <img class="proj-img" src="images/1.png" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                </div>
+                <div class="small-div">
+                    <img class="proj-img" src="images/2.png" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                </div>
+            </div>
+
+            <!-- Bootstrap Modals -->
+            <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg"> <!-- Use modal-lg class for a larger modal -->
+                    <div class="modal-content">
+                        <!-- Add modal content here -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel1">SWE Internship @ Capital One</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add project details here -->
+                            <p class= date>May 2023 - Aug 2023</p>
+                            <!-- Placeholder for grid images -->
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <img src="images/3.png" alt="Image 1">
+                               
+                                </div>
+                               <p class= desc>Built multiple BFFs and MFEs to connect over 50,000 dealerships to car-buying clients with Lit Element, Spring Boot, Javascript, Java, HTML, CSS, REST API, and SQL</p>
+                               <p class= desc>Designed a schema and built an SQL database with H2 Java Library and Capital One’s customer API to store appointment details, user details, and dealership information</p>
+                               <p class= desc>Created the front-end and back-end software for a customer-facing appointment scheduler where they can book test drive appointments, car deliveries, and service appointments through Capital One</p>
+                               <p class= desc>Created a dealership-facing portal that connects to the customer-facing appointment scheduler, displays a specific dealership’s schedule, and allows dealers to add, delete, edit, and manage all of their upcoming appointments</p>
+                            </div>
+                            <!-- Placeholder for text -->
+                           
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the modal structure for other projects -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg"> <!-- Use modal-lg class for a larger modal -->
+                    <div class="modal-content">
+                        <!-- Add modal content here -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel1">SWE Internship @ Genuine Parts Company</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add project details here -->
+                            <p class= date>Apr 2022 - Aug 2022</p>
+                            <!-- Placeholder for grid images -->
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <img src="images/gpc_tech.png" alt="Image 1">
+                               
+                                </div>
+                               <p class= desc>Responsible for designing and developing a web app framework for employees to track deliveries from over 6,000 NAPA stores to auto shops, saving approximately $9.3M per year for a Fortune 200 company</p>
+                               <p class= desc>Built the front-end for the web app using React, JavaScript, TypeScript, and Material UI implementation based on Figma designs and product requirements </p>
+                               <p class= desc>Integrated back-end services and infrastructure including AWS, APIs, and Spring Boot </p>
+                               <p class= desc>Worked in an agile software development environment, utilizing Test Driven Development (TDD), CI/CD, pair programming, Jira boards, and product requirements review with stakeholders </p>
+                            </div>
+                            <!-- Placeholder for text -->
+                           
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Repeat the modal structure for other projects -->
+                        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog modal-lg"> <!-- Use modal-lg class for a larger modal -->
+                                <div class="modal-content">
+                                    <!-- Add modal content here -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projectModalLabel1">FinPulse: A Credit Card Literacy App</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Add project details here -->
+                                        <p class= date>Nov 2023</p>
+                                        <!-- Placeholder for grid images -->
+                                        <div class="grid-container">
+                                            <div class="grid-item">
+                                                <img src="images/4.png" alt="Image 4">
+                                           
+                                            </div>
+                                           <p class= desc>Built a credit-card literacy web app, which leveraged AI to recommend credit cards to users with low credit card literacy, especially targeting to help college students and immigrants</p>
+                                           <p class= desc>Implemented OpenAI API, machine learning concepts, Flask, REST API, and Capital One's Nessy API for the back-end </p>
+                                           <p class= desc>Integrated React, JavaScript, and Material UI for front-end </p>
+                                           <p class= desc>Designed low-fidelity and high-fidelity prototypes using Figma </p>
+                                        </div>
+                                        <!-- Placeholder for text -->
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projectModalLabel1">Small Tunes: A UX Design Project</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="date">Mar 2021 - Jun 2021</p>
+                        
+                                        <!-- Gallery of 4 images in a 2 by 2 grid -->
+                                        <div class="grid-container">
+                                            <div class="grid-item" style = "height:400px">
+                                                <img src="images/st6.png" alt="Image 1"  style="width: 100%; height: 100%; object-fit: contain;">
+                                            </div>
+                                            <div class="grid-item" style = "height:400px" >
+                                                <img src="images/st7.png" alt="Image 2" style="width: 100%; height: 100%; object-fit: contain;">
+                                            </div>
+                                            <div class="grid-item" style = "height:400px" >
+                                                <img src="images/st5.png" alt="Image 2" style="width: 100%; height: 100%; object-fit: contain;">
+                                            </div>
+                                           
+                                        </div>
+                        
+                                        <!-- Fifth image taking up an entire third row -->
+                                 
+                        
+                                        <!-- Project details -->
+                                        <p class="desc">Applied the five-stage Design Thinking methodology to build an interface where users can discover and support their favorite independent musicians </p>
+                                        <p class="desc">Solved design problems via targeted UX research, user data, and iterative prototype testing </p>
+                                        <p class="desc">Created site maps, wires, and prototypes with accessible, human centric, and inclusive design principles </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                                  
+        
+            
+        </main>
+    </div>
+</body>
+
+</html>

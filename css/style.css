@@ -1,0 +1,279 @@
+.index-text {
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+  margin: 10px; /* Adjust the margin as needed */
+  color: #333; /* Set your desired text color */
+  font-size: 18px; /* Set your desired font size */
+  width: 50vh;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: None;
+
+  font-family: 'San Francisco';
+}
+.pic-div{
+  width:100%;
+  height: 200%;
+  top: 100%;
+  position: relative;
+  transform: translateY(-30%);
+
+
+}
+img.center-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.desc{
+  color: black;
+  text-align: left;
+  margin: 5px;
+}
+.date{
+  color: black;
+  font-size: 30px;
+}
+.modal-title{
+  font-family: 'San Francisco';
+  font-size: 40px;
+}
+.modal-body{
+  border:0px;
+
+}
+
+.proj-img{
+  max-height: 100%; /* Prevent images from stretching */
+  border-width: auto; /* Maintain the aspect ratio of the images */
+  object-fit: contain;
+
+}
+.small-div {
+ 
+  height: 20vh;
+  width: 20vh;
+  margin: 10px;
+  padding: 10px; /* Adjust the padding */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+nav {
+  z-index: 1000;
+  position: relative;
+}
+.outside{
+  border: 1px solid black;
+
+  position: relative;
+  width: 100%;
+  height: 95vh;
+        
+
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: url('SF-Pro-Display-Thin.otf') format('opentype');
+}
+a{
+  font-family: 'San Francisco';
+
+}
+#proj{
+  width: 25vh;
+}
+.bottom-right-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px; /* Adjust the margin as needed */
+  color: #333; /* Set your desired text color */
+  font-size: 18px; /* Set your desired font size */
+  width:15vh;
+  font-family: 'San Francisco';
+}
+
+
+
+
+
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+     
+      .gif {
+        display: none;
+      }
+  
+      h1 {
+        animation: none;
+      }
+  
+  }
+body{
+    background-color: #d4c9b0;
+    margin:10px;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #fff, #ccc, rgb(165, 142, 110), #ccc, #fff);
+    background-size: 500% 500%;
+    animation: gradientAnimation 30s infinite linear;
+    
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  25% {
+      background-position: 100% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  75% {
+      background-position: 0% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+p{
+    color: darkblue;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'San Francisco';
+}
+h1{
+    font-size: 120px;
+    text-align: left;
+    margin: 10px;
+   
+
+    font-family: 'San Francisco';
+    align-items: center;
+    position:relative; 
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+h2{
+    font-size:70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+li{
+    
+    margin-left: 50px;
+    font-family: 'San Francisco';
+}
+
+.icon{
+  border:0px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .grid-item img, .grid-item video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skip {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0; 
+    transition: opacity 0.3s;
+  }
+
+  .skip:hover {
+    background-color: #555;
+  }
+
+  .skip:focus {
+    opacity: 1; 
+  }
+
+
+    /* Tablet view styles */
+  
+    body {
+      margin: 20px; /* Increase margin for tablet view */
+    }
+  
+    h1 {
+      font-size: 80px; /* Adjust font size for tablet view */
+    }
+  
+    h2 {
+      font-size: 50px; /* Adjust font size for tablet view */
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Change to one column for tablet view */
+    }
+  
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 20px; /* Increase padding for tablet view */
+    }
+  
+    img {
+      width: 250px; /* Adjust image size for tablet view */
+      height: 250px;
+    }
+
+    li:hover {
+      text-decoration: underline;
+      text-decoration: bold;
+    }
+    h2:hover{
+      text-decoration:underline;
+    }
+    h2.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: lightgray; /* Change to match your background */
+      padding: 10px;
+      z-index: 100; /* Ensure it appears above other content */
+    }
+    
+  
+
+
+
+  
