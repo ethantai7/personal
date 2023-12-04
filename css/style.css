@@ -18,7 +18,7 @@
   width: 100%;
   border-width: auto; /* Maintain the aspect ratio of the images */
   object-fit: contain;
-  z-index: 1000;
+
 
 }
 .small-div-i {
