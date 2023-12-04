@@ -23,11 +23,11 @@
 <body>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
     <div class= outside>
-        <h1 id = petsTitle>Ethan Tai</h1>
+        <h1 id = petsTitle class="slide-in">Ethan Tai</h1>
         
 
 
-    <nav>
+    <nav class="slide-in">
         <ul class="nav navbar-nav flex-column">
             <li><a  style="font-size: 30px;" href = "index.html">Home</a></li>
             <li><a href = "projects.html">Projects</a></li>
@@ -36,12 +36,12 @@
         </ul>
     </nav>
     <main id = "main">
-        <div class = "pic-div">
+        <div class="pic-div fade-in">
             <img class="center-image" id = "mainImage" src="images/atl.png" alt="Centered Image" style= "bottom:10vh;">
         </div>
         
         
-        <div class="index-text" onclick="handleIndexTextClick(event)">
+        <div class="index-text slide-in" onclick="handleIndexTextClick(event)">
             <a class= atl style= "text-decoration: none; color: black">Born in Atlanta, GA </a>• <a class= cs style= "text-decoration: none; color: black">CS Student @ UMich</a> • <a class= disabled  style= "text-decoration: none; color: black">Inclusive development and design</a> • <a class = christian  style= "text-decoration: none; color: black">Christian</a>
         </div>
         
@@ -55,6 +55,18 @@
     function changeImage(imageSrc) {
         var centerImage = document.getElementById('mainImage');
         centerImage.src = imageSrc;
+        // centerImage.classList.add('slide-out');
+
+            // Add a delay to ensure the slide-out animation finishes before changing the image
+            setTimeout(function () {
+                // Change the image source
+                centerImage.src = imageSrc;
+
+                // Add slide-in-new class to the new image
+                // centerImage.classList.remove('slide-out');
+                // centerImage.classList.add('slide-in-new');
+            }, 1000); // Adjust the delay as needed
+        
     }
 
     function handleIndexTextClick(event) {

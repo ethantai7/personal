@@ -1,3 +1,59 @@
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in-out 3s forwards;
+}
+.slide-out {
+  transform: translateX(0);
+  animation: slideOut ease-in-out 1s forwards;
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+.slide-in-new {
+  transform: translateX(100%);
+  animation: slideInNew ease-in-out 1s forwards;
+}
+
+@keyframes slideInNew {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  animation: slideIn ease-in-out 5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+/* stuff */
 .intr-desc{
   color: black;
   text-align: left;
@@ -85,6 +141,7 @@ img.center-image {
   max-height: 100%; /* Prevent images from stretching */
   border-width: auto; /* Maintain the aspect ratio of the images */
   object-fit: contain;
+  z-index: 1000;
 
 }
 .small-div {
@@ -309,6 +366,37 @@ li{
       z-index: 100; /* Ensure it appears above other content */
     }
     
+
+    @media (max-width:798px) {
+      .intr-desc{
+        font-size: 18px;
+      }
+      /* .small-div-i{
+        width: 50%;
+        left: 100px;
+        
+        
+
+      } */
+      h1{
+        font-size:30px;
+      }
+      .index-text{
+        width:30vh;
+      }
+      .pic-div{
+        top:10vh;
+
+      }
+      .interest-center-div{
+        right:180px;
+        top: 150px;
+      }
+      a{
+        font-size: 20px;
+      }
+
+    }
   
 
 
