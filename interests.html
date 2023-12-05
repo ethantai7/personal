@@ -115,10 +115,7 @@
     } else if (imageSrc.includes('images/bball.png')) {
         return `
             <p class="intr-desc">I have always loved sports since I was a kid</p>
-            <p class="intr-desc">I love the competitiveness and the hype of it all</p>
             <p class="intr-desc">Currently I've been playing a lot of basketball</p>
-            // <p class="intr-desc">But for me a large part of it is nostalgia</p>
-            // <p class="intr-desc">My dad always took me to baseball, basketball, and football games as a kid</p>
             <p class="intr-desc">Watching the Atlanta Braves, Atlanta Hawks, and Georgia Tech Football </p>
 
         `;
@@ -146,18 +143,17 @@
             <p class= "intr-desc">There's something beautiful about buying used clothes from all around the world and creating my own unique closet and style</p>
             <p class= "intr-desc">Some styles that I've been into recently: </p>
             <p class= "intr-desc">Baggy corduroy</p>
-            <p class= "intr-desc">Thrifting and painting white shoes</p>
             <p class= "intr-desc">Quarterzips</p>
             <p class= "intr-desc">Knitwear</p>
 `;
     }
  else if (imageSrc.includes('images/read.png')) {
-        return `<p class= "intr-desc">My top 5 current books / series and my learnings</p>
+        return `<p class= "intr-desc">My top 3 current books / series and my learnings</p>
             <p class= "intr-desc"> <b>The Man Who Was Thursday </b>taught me about anarchism, literary satire, and the absurdity of life</p>
-            <p class= "intr-desc"> <b>Mere Christianity</b> has improved my perspective on religion and ethics</p>
+        
             <p class= "intr-desc"><b>The Stormlight Archive</b> immersed me in a powerful allegory for today's classism through a fantasy world</p>
             <p class= "intr-desc"><b>Dune</b> helped me understand me the consequences of political maneuvering and the power of religion and ecological awareness</p>
-            <p class= "intr-desc"><b>Mistborn</b> taught me about the brutality societal inequality and how power corrupts</p>
+          
             `;
     }
     // Add more cases as needed
@@ -172,6 +168,8 @@
         intrImgs.forEach(function (intrImg) {
             intrImg.addEventListener('click', function () {
                 // console.log(intrImg.src)
+                //  <p class= "intr-desc"><b>Mistborn</b> taught me about the brutality societal inequality and how power corrupts</p>
+                // <p class= "intr-desc"> <b>Mere Christianity</b> has improved my perspective on religion and ethics</p>
             
                 updateInterestContent(intrImg.src);
             });
@@ -180,3 +178,4 @@
 </body>
 
 </html>
+//

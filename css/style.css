@@ -1,4 +1,28 @@
 
+@media (prefers-reduced-motion: reduce) {
+  body {
+    background: #d4c9b0; /* Set a static background color for reduced motion */
+  }
+
+  html {
+    scroll-behavior: auto; 
+  }
+
+  .skip a {
+    -webkit-transition: none; 
+    transition: none; 
+  }
+
+  .gif {
+    display: none;
+  }
+
+  h1 {
+    animation: none;
+  }
+
+  /* Add more styles that need to be adjusted for reduced motion */
+}
 .fade-in {
   opacity: 0;
   animation: fadeIn ease-in-out 3s forwards;
@@ -397,6 +421,9 @@ li{
       }
 
     }
+
+
+
   
 
 
